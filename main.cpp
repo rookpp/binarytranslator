@@ -1,11 +1,8 @@
 #include <iostream>
 #include "cases.hpp"
 #include <string>
-std::string CHARSET = "10011001";
+std::string CHARSET = "10011001 11011101";
 int main()
 {
-    std::cout<<"Hi \n"<<std::flush;
     charTranslate(CHARSET);
-
-
 }

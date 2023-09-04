@@ -1,18 +1,34 @@
 #ifndef cases_hpp
 #define cases_hpp
 #include <iostream>
-#include <string>
-
+#include <string.h>
+#include <stdio.h>
 int charTranslate(std::string bin)
 {
-    int* COLLECTION = new int[size];
+    int size = 0;
+    //int* COLLECTION = new int[size];
     for(int i =0; i< bin.size();i++)
     {
-        if(bin[i] == "1")
+        //Determining size of array
+        switch (bin[i])
         {
-
+        case '1':
+            size++;
+            continue;
+        case '0':
+            size++;
+            continue;
+        case ' ':
+            continue;
+        default:
+            system("CLS");
+            std::cout<<"ERROR: character other than a space, 1 or 0 detected. \n"<<std::flush;
+            return(EXIT_FAILURE);
         }
+        
     }
+    std::cout<<size<<std::endl;
+    
     return 0;
 }
 
