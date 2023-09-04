@@ -3,13 +3,13 @@
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
-int charTranslate(std::string bin)
-{
+int ArSize(std::string bin)
+{  
     int size = 0;
-    //int* COLLECTION = new int[size];
     for(int i =0; i< bin.size();i++)
     {
-        //Determining size of array
+        
+        //Determining size of array and detectiing non binary, non space characters
         switch (bin[i])
         {
         case '1':
@@ -27,8 +27,15 @@ int charTranslate(std::string bin)
         }
         
     }
-    std::cout<<size<<std::endl;
     
+    return size;
+}
+
+
+
+int charTranslate(std::string bin)
+{
+
     return 0;
 }
 
