@@ -1,6 +1,7 @@
 #include <iostream>
 #include "cases.hpp"
 #include <string>
+//Example charset, will update to take custom user input when ready
 std::string CHARSET = "10011001 11011101";
 int main()
 {
