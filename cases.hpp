@@ -3,12 +3,14 @@
 #include <iostream>
 #include <string.h>
 #include <stdio.h>
+
+
 int ArSize(std::string bin)
 {  
     int size = 0;
+
     for(int i =0; i< bin.size();i++)
-    {
-        
+    {        
         //Determining size of array and detectiing non binary, non space characters
         switch (bin[i])
         {
@@ -25,17 +27,18 @@ int ArSize(std::string bin)
             std::cout<<"ERROR: character other than a space, 1 or 0 detected. \n"<<std::flush;
             return(EXIT_FAILURE);
         }
-        
     }
-    
     return size;
 }
 
 
-
+//decimal conversion
 int charTranslate(std::string bin)
 {
-
+    for(int i =0; i< bin.size();i++)
+    {
+        
+    }
     return 0;
 }
 
